@@ -95,31 +95,11 @@ header p {
     border-radius: 12px;
     background: #8b2f2f;
     color: white;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(20px);
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
-.btn:hover {
-    background: #a73a3a;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    opacity: 1;
-}
-
-/* Animation fade-in lors du chargement */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* On applique l'animation sur les boutons */
-.btn {
-    animation: fadeInUp 0.6s forwards;
-    animation-delay: 0.1s; /* léger décalage pour un effet progressif */
+.btn:active {
+    transform: scale(0.95);
 }
 
 /* Emoji drapeaux agrandis */
@@ -146,23 +126,11 @@ header p {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(20px);
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
-.social-btn:hover {
-    background: #3f523f;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    opacity: 1;
-}
-
-/* Animation fade-in aussi sur les réseaux sociaux */
-.social-btn {
-    animation: fadeInUp 0.6s forwards;
-    animation-delay: 0.2s; /* un petit décalage après les boutons principaux */
+.social-btn:active {
+    transform: scale(0.95);
 }
 
 /* --- Footer --- */
@@ -207,15 +175,15 @@ footer {
         </a>
 
         <a class="btn" href="LIEN_MENU_FR" target="_blank">
-            🇫🇷 Voir la carte (Français)
+            <span class="flag">🇫🇷</span> Voir la carte (Français)
         </a>
 
         <a class="btn" href="LIEN_MENU_EN" target="_blank">
-            🇬🇧 View the menu (English)
+            <span class="flag">🇬🇧</span> View the menu (English)
         </a>
 
         <a class="btn" href="LIEN_MENU_ES" target="_blank">
-            🇪🇸 Ver el menú (Español)
+            <span class="flag">🇪🇸</span> Ver el menú (Español)
         </a>
 
     </div>
