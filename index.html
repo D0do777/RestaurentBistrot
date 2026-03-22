@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Le Bistrot - Sarlat</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: "Georgia", serif;
+    background:#f4efe6;
+    color:#2b2b2b;
+    text-align:center;
+}
+
+header{
+    background:#2f3e2f;
+    color:white;
+    padding:40px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:2.5em;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2em;
+}
+
+.hero{
+    background-image:url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/74/09/79/repas-au-soleil.jpg?w=1000&h=-1&s=1");
+    background-size:cover;
+    background-position:center;
+    padding:120px 20px;
+    color:white;
+    text-shadow:1px 1px 5px black;
+}
+
+.hero h2{
+    font-size:2.2em;
+}
+
+.container{
+    padding:40px 20px;
+    max-width:900px;
+    margin:auto;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    margin-top:30px;
+}
+
+.btn{
+    display:block;
+    padding:18px;
+    font-size:1.2em;
+    text-decoration:none;
+    border-radius:8px;
+    background:#8b2f2f;
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#a73a3a;
+}
+
+/* Boutons réseaux sociaux */
+
+.social-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+.social-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+    border-radius:8px;
+    background:#2f3e2f;
+    color:white;
+    text-decoration:none;
+    font-size:1.5em;
+    transition:0.3s;
+}
+
+.social-btn:hover{
+    background:#3f523f;
+}
+
+footer{
+    margin-top:50px;
+    background:#2f3e2f;
+    color:white;
+    padding:20px;
+    font-size:0.9em;
+}
+
+@media(min-width:600px){
+
+.buttons{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Le Bistrot</h1>
+<p>Restaurant à Sarlat – Cuisine du terroir</p>
+</header>
+
+<section class="hero">
+<h2>Bienvenue au Bistrot</h2>
+<p>Face à la cathédrale – Cuisine périgourdine</p>
+</section>
+
+<div class="container">
+
+<h2>Choisissez une option</h2>
+
+<div class="buttons">
+
+<a class="btn" href="LIEN_AVIS" target="_blank">
+⭐ Laisser un avis
+</a>
+
+<a class="btn" href="LIEN_MENU_FR" target="_blank">
+📖 Voir la carte (Français)
+</a>
+
+<a class="btn" href="LIEN_MENU_EN" target="_blank">
+🇬🇧 View the menu (English)
+</a>
+
+<a class="btn" href="LIEN_MENU_ES" target="_blank">
+🇪🇸 Ver el menú (Español)
+</a>
+
+</div>
+
+<!-- Boutons réseaux sociaux -->
+
+<div class="social-buttons">
+
+<a class="social-btn" href="LIEN_FACEBOOK" target="_blank">
+📘
+</a>
+
+<a class="social-btn" href="LIEN_INSTAGRAM" target="_blank">
+📷
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>Le Bistrot – Isabelle & Franck • Depuis 2004</p>
+<p>Cuisine du Périgord – Sarlat</p>
+</footer>
+
+</body>
+</html>
